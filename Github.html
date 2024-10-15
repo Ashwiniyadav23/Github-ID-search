@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Github.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"/>
+</head>
+<body>
+    <header>
+        <div class="head">devfinder</div>
+        <div class="light-dark-mode">
+            <button class="color-mode_btn light--hidden" aria-label="Toggle light mode">
+                LIGHT <i class="fas fa-sun"></i> 
+            </button>
+            <button class="color-mode_btn dark--hidden" aria-label="Toggle dark mode">
+                DARK <i class="fas fa-moon"></i> 
+            </button>
+        </div>
+    </header>
+    <div class="search">
+        <div class="searchText">
+            <i class="fas fa-search"></i> 
+            <input type="text" placeholder="Search Github username.....">
+        </div>
+        <div class="searchbtn">Search <i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="resultBody">
+        <div class="githubHead">
+            <div class="mainImg">
+                <i class="fas fa-user-circle"></i> 
+                <div class="githubUser">Github User</div>
+                <div class="githubUserName"><a href="@githubusername">GitHub Username</a></div>
+                <div class="githubJoinDate">Joined Date</div>
+            </div>
+        </div>
+        <div class="githubFact">
+            <div class="githubBio">Github Bio...</div>
+            <div class="githubRepo">
+                <div class="repos">
+                    <div class="repoHeading">Repos</div>
+                    <div class="repoTotal">0</div>
+                </div>
+                <div class="followers">
+                    <div class="followerHeading">Followers</div>
+                    <div class="followerTotal">0</div>
+                </div>
+                <div class="following">
+                    <div class="followingHeading">Following</div>
+                    <div class="followingTotal">0</div>
+                </div>
+            </div>
+            <div class="githubSocial">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <p class="location">Location</p>
+                </div>
+                <div class="twitter">
+                    <i class="fab fa-twitter"></i> 
+                    <p class="twit">Twitter</p>
+                </div>
+                <div class="website">
+                    <i class="fas fa-link"></i> 
+                    <p class="websites">Website</p>
+                </div>
+                <div class="company">
+                    <i class="fas fa-building"></i> 
+                    <p class="companies">Company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color-mode">
+        <button class="color-mode_btn" id="light-mode-btn" aria-label="Toggle light mode">Light Mode</button>
+        <button class="color-mode_btn" id="dark-mode-btn" aria-label="Toggle dark mode" style="display:none;">Dark Mode</button>
+    </div>
+    
+    <script src="Github.js"></script>
+</body>
+</html>
